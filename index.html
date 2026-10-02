@@ -2,8 +2,72 @@
 <html>
     <head>
         <!-- Link your CSS file and other references here -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="styles.css"/>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <!-- Content goes here -->
+        <header class="header">
+            <div class="header-left">
+                <img src="assets/menu_icon.png" alt="">
+                <img src="assets/search_icon.png" alt="">
+                <input type="text" placeholder="Quick find">
+            </div>
+            <div class="header-right">
+                <img src="assets/check_icon.png" alt="">
+                <span>30/5</span>
+            </div>
+        </header>
+        <div class="page-layout">
+            <nav class="sidebar">
+                <ul>
+                    <li><img src="assets/inbox_icon.png" alt="">Inbox 
+                    <span class="task-count">5</span></li>
+                    <li><img src="assets/calendar_icon.png" alt="">Today
+                    <span class="task-count">5</span></li>
+                    <li><img src="assets/upcoming_icon.png" alt="">Upcoming</li>
+                </ul>
+            </nav>
+            <main class="main-content">
+                <h1>Inbox</h1>
+                <div class="task-list">
+                <ul>
+                    <li>
+                        <label> 
+                            <input type="checkbox">
+                            <span> Call Mom </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label> 
+                            <input type="checkbox">
+                            <span>Buy the new issue of Scientific American</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label> 
+                            <input type="checkbox">
+                            <span>Return the textbook to Josie</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label> 
+                            <input type="checkbox">
+                            <span>Buy the new album by Rake</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label> 
+                            <input type="checkbox">
+                            <span>Buy a gift card for Dad</span>
+                        </label>
+                    </li>
+                </ul>
+                </div>
+            </main>
+            
+        </div>    
     </body>
 </html>

@@ -1,4 +1,80 @@
 /* This is your CSS files */
-body {
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
     color: black
+}
+.header{
+    background-color: #dc4c3e;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding:5px;
+}
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.header-right {
+    margin-left: auto;
+}
+.header input {
+    font: inherit;
+}
+.header img{
+    width:2rem;
+    height:2rem;
+    object-fit: contain;
+}
+.page-layout{
+    display:flex;
+}
+.sidebar{
+    background: #fefbf2;
+    flex: 0 0 300px;
+}
+.sidebar ul {
+    list-style: none;
+}
+.task-count {
+    color: #7e7d79;
+    font-size: 12px;
+}
+h1{
+    font-size:20px;
+    padding: 0px 40px;
+}
+.task-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.task-list li{
+    padding: 6px 0;
+    list-style: none;
+}
+.task-list label{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.task-list input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #bdbdbd;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    flex: 0 0 20px;
+}
+.task-list li {
+    border-bottom: 1px solid #eeeeee;
+    padding: 12px 0;
+}
+@media (max-width: 480px) {
+    .sidebar {
+        display: none;
+    }
 }
